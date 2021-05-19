@@ -26,7 +26,6 @@ RUN ldconfig
 EXPOSE 4433
 
 # Copy the example key to the container
-# COPY example/server.key example/server.crt ./
 COPY certs/key.pem certs/cert.pem certs/cacert.pem ./
 
 # Start the server
