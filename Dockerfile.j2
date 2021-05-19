@@ -60,7 +60,6 @@ RUN ln -s /usr/local/ssl/bin/openssl /usr/local/bin/openssl
 {% endif %}
 
 # Copy the example key to the container
-# COPY example/server.key example/server.crt ./
 COPY certs/key.pem certs/cert.pem certs/cacert.pem ./
 
 # Start the server
