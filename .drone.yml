@@ -3,9 +3,29 @@ kind: pipeline
 name: AFTER_COMPAQ_PATCH
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:AFTER_COMPAQ_PATCH
@@ -98,9 +118,29 @@ kind: pipeline
 name: BEFORE_COMPAQ_PATCH
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:BEFORE_COMPAQ_PATCH
@@ -193,9 +233,29 @@ kind: pipeline
 name: BEFORE_engine
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:BEFORE_engine
@@ -288,9 +348,29 @@ kind: pipeline
 name: BEN_FIPS_TEST_1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:BEN_FIPS_TEST_1
@@ -383,9 +463,29 @@ kind: pipeline
 name: BEN_FIPS_TEST_2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:BEN_FIPS_TEST_2
@@ -478,9 +578,29 @@ kind: pipeline
 name: BEN_FIPS_TEST_3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:BEN_FIPS_TEST_3
@@ -573,9 +693,29 @@ kind: pipeline
 name: BEN_FIPS_TEST_4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:BEN_FIPS_TEST_4
@@ -668,9 +808,29 @@ kind: pipeline
 name: BEN_FIPS_TEST_5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:BEN_FIPS_TEST_5
@@ -763,9 +923,29 @@ kind: pipeline
 name: BEN_FIPS_TEST_6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:BEN_FIPS_TEST_6
@@ -858,9 +1038,29 @@ kind: pipeline
 name: BEN_FIPS_TEST_7
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:BEN_FIPS_TEST_7
@@ -953,9 +1153,29 @@ kind: pipeline
 name: BEN_FIPS_TEST_8
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:BEN_FIPS_TEST_8
@@ -1048,9 +1268,29 @@ kind: pipeline
 name: FIPS_098_TEST_1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:FIPS_098_TEST_1
@@ -1143,9 +1383,29 @@ kind: pipeline
 name: FIPS_098_TEST_2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:FIPS_098_TEST_2
@@ -1238,9 +1498,29 @@ kind: pipeline
 name: FIPS_098_TEST_3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:FIPS_098_TEST_3
@@ -1333,9 +1613,29 @@ kind: pipeline
 name: FIPS_098_TEST_4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:FIPS_098_TEST_4
@@ -1428,9 +1728,29 @@ kind: pipeline
 name: FIPS_098_TEST_5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:FIPS_098_TEST_5
@@ -1523,9 +1843,29 @@ kind: pipeline
 name: FIPS_098_TEST_6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:FIPS_098_TEST_6
@@ -1618,9 +1958,29 @@ kind: pipeline
 name: FIPS_098_TEST_7
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:FIPS_098_TEST_7
@@ -1713,9 +2073,29 @@ kind: pipeline
 name: FIPS_098_TEST_8
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:FIPS_098_TEST_8
@@ -1808,9 +2188,29 @@ kind: pipeline
 name: FIPS_TEST_10
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:FIPS_TEST_10
@@ -1903,9 +2303,29 @@ kind: pipeline
 name: FIPS_TEST_9
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:FIPS_TEST_9
@@ -1998,9 +2418,29 @@ kind: pipeline
 name: LEVITTE_after_const
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:LEVITTE_after_const
@@ -2093,9 +2533,29 @@ kind: pipeline
 name: LEVITTE_before_const
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:LEVITTE_before_const
@@ -2188,9 +2648,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6
@@ -2283,9 +2763,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6-beta1
@@ -2378,9 +2878,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6-beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6-beta2
@@ -2473,9 +2993,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6-beta3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6-beta3
@@ -2568,9 +3108,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6a
@@ -2663,9 +3223,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6a-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6a-beta1
@@ -2758,9 +3338,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6a-beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6a-beta2
@@ -2853,9 +3453,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6a-beta3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6a-beta3
@@ -2948,9 +3568,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6b
@@ -3043,9 +3683,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6c
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6c
@@ -3138,9 +3798,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6d
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6d
@@ -3233,9 +3913,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6d-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6d-beta1
@@ -3328,9 +4028,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6e
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6e
@@ -3423,9 +4143,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6f
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6f
@@ -3518,9 +4258,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6g
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6g
@@ -3613,9 +4373,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6h
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6h
@@ -3708,9 +4488,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6i
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6i
@@ -3803,9 +4603,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6j
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6j
@@ -3898,9 +4718,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6k
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6k
@@ -3993,9 +4833,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6l
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6l
@@ -4088,9 +4948,29 @@ kind: pipeline
 name: OpenSSL-engine-0_9_6m
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-engine-0_9_6m
@@ -4183,9 +5063,29 @@ kind: pipeline
 name: OpenSSL-fips-1_2_0
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-1_2_0
@@ -4278,9 +5178,29 @@ kind: pipeline
 name: OpenSSL-fips-1_2_1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-1_2_1
@@ -4373,9 +5293,29 @@ kind: pipeline
 name: OpenSSL-fips-1_2_2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-1_2_2
@@ -4468,9 +5408,29 @@ kind: pipeline
 name: OpenSSL-fips-1_2_3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-1_2_3
@@ -4563,9 +5523,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0
@@ -4658,9 +5638,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0-pl1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0-pl1
@@ -4753,9 +5753,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0-rc1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0-rc1
@@ -4848,9 +5868,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0-rc2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0-rc2
@@ -4943,9 +5983,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0-rc3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0-rc3
@@ -5038,9 +6098,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0-rc4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0-rc4
@@ -5133,9 +6213,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0-rc5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0-rc5
@@ -5228,9 +6328,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0-rc6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0-rc6
@@ -5323,9 +6443,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0-rc7
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0-rc7
@@ -5418,9 +6558,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0-rc8
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0-rc8
@@ -5513,9 +6673,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0-rc9
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0-rc9
@@ -5608,9 +6788,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_1
@@ -5703,9 +6903,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_10
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_10
@@ -5798,9 +7018,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_11
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_11
@@ -5893,9 +7133,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_12
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_12
@@ -5988,9 +7248,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_13
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_13
@@ -6083,9 +7363,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_14
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_14
@@ -6178,9 +7478,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_15
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_15
@@ -6273,9 +7593,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_16
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_16
@@ -6368,9 +7708,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_2
@@ -6463,9 +7823,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_3
@@ -6558,9 +7938,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_4
@@ -6653,9 +8053,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_5
@@ -6748,9 +8168,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_6
@@ -6843,9 +8283,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_7
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_7
@@ -6938,9 +8398,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_8
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_8
@@ -7033,9 +8513,29 @@ kind: pipeline
 name: OpenSSL-fips-2_0_9
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL-fips-2_0_9
@@ -7128,9 +8628,29 @@ kind: pipeline
 name: OpenSSL_0_9_1c
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_1c
@@ -7223,9 +8743,29 @@ kind: pipeline
 name: OpenSSL_0_9_2b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_2b
@@ -7318,9 +8858,29 @@ kind: pipeline
 name: OpenSSL_0_9_3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_3
@@ -7413,9 +8973,29 @@ kind: pipeline
 name: OpenSSL_0_9_3a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_3a
@@ -7508,9 +9088,29 @@ kind: pipeline
 name: OpenSSL_0_9_3beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_3beta1
@@ -7603,9 +9203,29 @@ kind: pipeline
 name: OpenSSL_0_9_3beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_3beta2
@@ -7698,9 +9318,29 @@ kind: pipeline
 name: OpenSSL_0_9_4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_4
@@ -7793,9 +9433,29 @@ kind: pipeline
 name: OpenSSL_0_9_5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_5
@@ -7888,9 +9548,29 @@ kind: pipeline
 name: OpenSSL_0_9_5a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_5a
@@ -7983,9 +9663,29 @@ kind: pipeline
 name: OpenSSL_0_9_5a-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_5a-beta1
@@ -8078,9 +9778,29 @@ kind: pipeline
 name: OpenSSL_0_9_5a-beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_5a-beta2
@@ -8173,9 +9893,29 @@ kind: pipeline
 name: OpenSSL_0_9_5beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_5beta1
@@ -8268,9 +10008,29 @@ kind: pipeline
 name: OpenSSL_0_9_5beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_5beta2
@@ -8363,9 +10123,29 @@ kind: pipeline
 name: OpenSSL_0_9_6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6
@@ -8458,9 +10238,29 @@ kind: pipeline
 name: OpenSSL_0_9_6-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6-beta1
@@ -8553,9 +10353,29 @@ kind: pipeline
 name: OpenSSL_0_9_6-beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6-beta2
@@ -8648,9 +10468,29 @@ kind: pipeline
 name: OpenSSL_0_9_6-beta3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6-beta3
@@ -8743,9 +10583,29 @@ kind: pipeline
 name: OpenSSL_0_9_6a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6a
@@ -8838,9 +10698,29 @@ kind: pipeline
 name: OpenSSL_0_9_6a-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6a-beta1
@@ -8933,9 +10813,29 @@ kind: pipeline
 name: OpenSSL_0_9_6a-beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6a-beta2
@@ -9028,9 +10928,29 @@ kind: pipeline
 name: OpenSSL_0_9_6a-beta3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6a-beta3
@@ -9123,9 +11043,29 @@ kind: pipeline
 name: OpenSSL_0_9_6b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6b
@@ -9218,9 +11158,29 @@ kind: pipeline
 name: OpenSSL_0_9_6c
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6c
@@ -9313,9 +11273,29 @@ kind: pipeline
 name: OpenSSL_0_9_6d
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6d
@@ -9408,9 +11388,29 @@ kind: pipeline
 name: OpenSSL_0_9_6d-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6d-beta1
@@ -9503,9 +11503,29 @@ kind: pipeline
 name: OpenSSL_0_9_6e
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6e
@@ -9598,9 +11618,29 @@ kind: pipeline
 name: OpenSSL_0_9_6f
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6f
@@ -9693,9 +11733,29 @@ kind: pipeline
 name: OpenSSL_0_9_6g
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6g
@@ -9788,9 +11848,29 @@ kind: pipeline
 name: OpenSSL_0_9_6h
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6h
@@ -9883,9 +11963,29 @@ kind: pipeline
 name: OpenSSL_0_9_6i
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6i
@@ -9978,9 +12078,29 @@ kind: pipeline
 name: OpenSSL_0_9_6j
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6j
@@ -10073,9 +12193,29 @@ kind: pipeline
 name: OpenSSL_0_9_6k
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6k
@@ -10168,9 +12308,29 @@ kind: pipeline
 name: OpenSSL_0_9_6l
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6l
@@ -10263,9 +12423,29 @@ kind: pipeline
 name: OpenSSL_0_9_6m
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_6m
@@ -10358,9 +12538,29 @@ kind: pipeline
 name: OpenSSL_0_9_7
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7
@@ -10453,9 +12653,29 @@ kind: pipeline
 name: OpenSSL_0_9_7-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7-beta1
@@ -10548,9 +12768,29 @@ kind: pipeline
 name: OpenSSL_0_9_7-beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7-beta2
@@ -10643,9 +12883,29 @@ kind: pipeline
 name: OpenSSL_0_9_7-beta3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7-beta3
@@ -10738,9 +12998,29 @@ kind: pipeline
 name: OpenSSL_0_9_7-beta4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7-beta4
@@ -10833,9 +13113,29 @@ kind: pipeline
 name: OpenSSL_0_9_7-beta5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7-beta5
@@ -10928,9 +13228,29 @@ kind: pipeline
 name: OpenSSL_0_9_7-beta6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7-beta6
@@ -11023,9 +13343,29 @@ kind: pipeline
 name: OpenSSL_0_9_7a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7a
@@ -11118,9 +13458,29 @@ kind: pipeline
 name: OpenSSL_0_9_7b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7b
@@ -11213,9 +13573,29 @@ kind: pipeline
 name: OpenSSL_0_9_7c
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7c
@@ -11308,9 +13688,29 @@ kind: pipeline
 name: OpenSSL_0_9_7d
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7d
@@ -11403,9 +13803,29 @@ kind: pipeline
 name: OpenSSL_0_9_7e
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7e
@@ -11498,9 +13918,29 @@ kind: pipeline
 name: OpenSSL_0_9_7f
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7f
@@ -11593,9 +14033,29 @@ kind: pipeline
 name: OpenSSL_0_9_7g
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7g
@@ -11688,9 +14148,29 @@ kind: pipeline
 name: OpenSSL_0_9_7h
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7h
@@ -11783,9 +14263,29 @@ kind: pipeline
 name: OpenSSL_0_9_7i
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7i
@@ -11878,9 +14378,29 @@ kind: pipeline
 name: OpenSSL_0_9_7j
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7j
@@ -11973,9 +14493,29 @@ kind: pipeline
 name: OpenSSL_0_9_7k
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7k
@@ -12068,9 +14608,29 @@ kind: pipeline
 name: OpenSSL_0_9_7l
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7l
@@ -12163,9 +14723,29 @@ kind: pipeline
 name: OpenSSL_0_9_7m
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_7m
@@ -12258,9 +14838,29 @@ kind: pipeline
 name: OpenSSL_0_9_8
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8
@@ -12353,9 +14953,29 @@ kind: pipeline
 name: OpenSSL_0_9_8-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8-beta1
@@ -12448,9 +15068,29 @@ kind: pipeline
 name: OpenSSL_0_9_8-beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8-beta2
@@ -12543,9 +15183,29 @@ kind: pipeline
 name: OpenSSL_0_9_8-beta3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8-beta3
@@ -12638,9 +15298,29 @@ kind: pipeline
 name: OpenSSL_0_9_8-beta4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8-beta4
@@ -12733,9 +15413,29 @@ kind: pipeline
 name: OpenSSL_0_9_8-beta5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8-beta5
@@ -12828,9 +15528,29 @@ kind: pipeline
 name: OpenSSL_0_9_8-beta6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8-beta6
@@ -12923,9 +15643,29 @@ kind: pipeline
 name: OpenSSL_0_9_8-post-auto-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8-post-auto-reformat
@@ -13018,9 +15758,29 @@ kind: pipeline
 name: OpenSSL_0_9_8-post-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8-post-reformat
@@ -13113,9 +15873,29 @@ kind: pipeline
 name: OpenSSL_0_9_8-pre-auto-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8-pre-auto-reformat
@@ -13208,9 +15988,29 @@ kind: pipeline
 name: OpenSSL_0_9_8-pre-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8-pre-reformat
@@ -13303,9 +16103,29 @@ kind: pipeline
 name: OpenSSL_0_9_8a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8a
@@ -13398,9 +16218,29 @@ kind: pipeline
 name: OpenSSL_0_9_8b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8b
@@ -13493,9 +16333,29 @@ kind: pipeline
 name: OpenSSL_0_9_8c
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8c
@@ -13588,9 +16448,29 @@ kind: pipeline
 name: OpenSSL_0_9_8d
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8d
@@ -13683,9 +16563,29 @@ kind: pipeline
 name: OpenSSL_0_9_8e
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8e
@@ -13778,9 +16678,29 @@ kind: pipeline
 name: OpenSSL_0_9_8f
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8f
@@ -13873,9 +16793,29 @@ kind: pipeline
 name: OpenSSL_0_9_8g
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8g
@@ -13968,9 +16908,29 @@ kind: pipeline
 name: OpenSSL_0_9_8h
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8h
@@ -14063,9 +17023,29 @@ kind: pipeline
 name: OpenSSL_0_9_8i
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8i
@@ -14158,9 +17138,29 @@ kind: pipeline
 name: OpenSSL_0_9_8j
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8j
@@ -14253,9 +17253,29 @@ kind: pipeline
 name: OpenSSL_0_9_8k
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8k
@@ -14348,9 +17368,29 @@ kind: pipeline
 name: OpenSSL_0_9_8l
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8l
@@ -14443,9 +17483,29 @@ kind: pipeline
 name: OpenSSL_0_9_8m
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8m
@@ -14538,9 +17598,29 @@ kind: pipeline
 name: OpenSSL_0_9_8m-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8m-beta1
@@ -14633,9 +17713,29 @@ kind: pipeline
 name: OpenSSL_0_9_8n
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8n
@@ -14728,9 +17828,29 @@ kind: pipeline
 name: OpenSSL_0_9_8o
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8o
@@ -14823,9 +17943,29 @@ kind: pipeline
 name: OpenSSL_0_9_8p
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8p
@@ -14918,9 +18058,29 @@ kind: pipeline
 name: OpenSSL_0_9_8q
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8q
@@ -15013,9 +18173,29 @@ kind: pipeline
 name: OpenSSL_0_9_8r
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8r
@@ -15108,9 +18288,29 @@ kind: pipeline
 name: OpenSSL_0_9_8s
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8s
@@ -15203,9 +18403,29 @@ kind: pipeline
 name: OpenSSL_0_9_8t
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8t
@@ -15298,9 +18518,29 @@ kind: pipeline
 name: OpenSSL_0_9_8u
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8u
@@ -15393,9 +18633,29 @@ kind: pipeline
 name: OpenSSL_0_9_8v
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8v
@@ -15488,9 +18748,29 @@ kind: pipeline
 name: OpenSSL_0_9_8w
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8w
@@ -15583,9 +18863,29 @@ kind: pipeline
 name: OpenSSL_0_9_8x
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8x
@@ -15678,9 +18978,29 @@ kind: pipeline
 name: OpenSSL_0_9_8y
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8y
@@ -15773,9 +19093,29 @@ kind: pipeline
 name: OpenSSL_0_9_8za
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8za
@@ -15868,9 +19208,29 @@ kind: pipeline
 name: OpenSSL_0_9_8zb
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8zb
@@ -15963,9 +19323,29 @@ kind: pipeline
 name: OpenSSL_0_9_8zc
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8zc
@@ -16058,9 +19438,29 @@ kind: pipeline
 name: OpenSSL_0_9_8zd
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8zd
@@ -16153,9 +19553,29 @@ kind: pipeline
 name: OpenSSL_0_9_8ze
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8ze
@@ -16248,9 +19668,29 @@ kind: pipeline
 name: OpenSSL_0_9_8zf
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8zf
@@ -16343,9 +19783,29 @@ kind: pipeline
 name: OpenSSL_0_9_8zg
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8zg
@@ -16438,9 +19898,29 @@ kind: pipeline
 name: OpenSSL_0_9_8zh
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_0_9_8zh
@@ -16533,9 +20013,29 @@ kind: pipeline
 name: OpenSSL_1_0_0
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0
@@ -16628,9 +20128,29 @@ kind: pipeline
 name: OpenSSL_1_0_0-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0-beta1
@@ -16723,9 +20243,29 @@ kind: pipeline
 name: OpenSSL_1_0_0-beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0-beta2
@@ -16818,9 +20358,29 @@ kind: pipeline
 name: OpenSSL_1_0_0-beta3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0-beta3
@@ -16913,9 +20473,29 @@ kind: pipeline
 name: OpenSSL_1_0_0-beta4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0-beta4
@@ -17008,9 +20588,29 @@ kind: pipeline
 name: OpenSSL_1_0_0-beta5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0-beta5
@@ -17103,9 +20703,29 @@ kind: pipeline
 name: OpenSSL_1_0_0-post-auto-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0-post-auto-reformat
@@ -17198,9 +20818,29 @@ kind: pipeline
 name: OpenSSL_1_0_0-post-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0-post-reformat
@@ -17293,9 +20933,29 @@ kind: pipeline
 name: OpenSSL_1_0_0-pre-auto-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0-pre-auto-reformat
@@ -17388,9 +21048,29 @@ kind: pipeline
 name: OpenSSL_1_0_0-pre-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0-pre-reformat
@@ -17483,9 +21163,29 @@ kind: pipeline
 name: OpenSSL_1_0_0a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0a
@@ -17578,9 +21278,29 @@ kind: pipeline
 name: OpenSSL_1_0_0b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0b
@@ -17673,9 +21393,29 @@ kind: pipeline
 name: OpenSSL_1_0_0c
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0c
@@ -17768,9 +21508,29 @@ kind: pipeline
 name: OpenSSL_1_0_0d
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0d
@@ -17863,9 +21623,29 @@ kind: pipeline
 name: OpenSSL_1_0_0e
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0e
@@ -17958,9 +21738,29 @@ kind: pipeline
 name: OpenSSL_1_0_0f
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0f
@@ -18053,9 +21853,29 @@ kind: pipeline
 name: OpenSSL_1_0_0g
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0g
@@ -18148,9 +21968,29 @@ kind: pipeline
 name: OpenSSL_1_0_0h
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0h
@@ -18243,9 +22083,29 @@ kind: pipeline
 name: OpenSSL_1_0_0i
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0i
@@ -18338,9 +22198,29 @@ kind: pipeline
 name: OpenSSL_1_0_0j
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0j
@@ -18433,9 +22313,29 @@ kind: pipeline
 name: OpenSSL_1_0_0k
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0k
@@ -18528,9 +22428,29 @@ kind: pipeline
 name: OpenSSL_1_0_0l
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0l
@@ -18623,9 +22543,29 @@ kind: pipeline
 name: OpenSSL_1_0_0m
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0m
@@ -18718,9 +22658,29 @@ kind: pipeline
 name: OpenSSL_1_0_0n
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0n
@@ -18813,9 +22773,29 @@ kind: pipeline
 name: OpenSSL_1_0_0o
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0o
@@ -18908,9 +22888,29 @@ kind: pipeline
 name: OpenSSL_1_0_0p
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0p
@@ -19003,9 +23003,29 @@ kind: pipeline
 name: OpenSSL_1_0_0q
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0q
@@ -19098,9 +23118,29 @@ kind: pipeline
 name: OpenSSL_1_0_0r
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0r
@@ -19193,9 +23233,29 @@ kind: pipeline
 name: OpenSSL_1_0_0s
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0s
@@ -19288,9 +23348,29 @@ kind: pipeline
 name: OpenSSL_1_0_0t
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_0t
@@ -19383,9 +23463,29 @@ kind: pipeline
 name: OpenSSL_1_0_1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1
@@ -19478,9 +23578,29 @@ kind: pipeline
 name: OpenSSL_1_0_1-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1-beta1
@@ -19573,9 +23693,29 @@ kind: pipeline
 name: OpenSSL_1_0_1-beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1-beta2
@@ -19668,9 +23808,29 @@ kind: pipeline
 name: OpenSSL_1_0_1-beta3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1-beta3
@@ -19763,9 +23923,29 @@ kind: pipeline
 name: OpenSSL_1_0_1-post-auto-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1-post-auto-reformat
@@ -19858,9 +24038,29 @@ kind: pipeline
 name: OpenSSL_1_0_1-post-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1-post-reformat
@@ -19953,9 +24153,29 @@ kind: pipeline
 name: OpenSSL_1_0_1-pre-auto-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1-pre-auto-reformat
@@ -20048,9 +24268,29 @@ kind: pipeline
 name: OpenSSL_1_0_1-pre-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1-pre-reformat
@@ -20143,9 +24383,29 @@ kind: pipeline
 name: OpenSSL_1_0_1a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1a
@@ -20238,9 +24498,29 @@ kind: pipeline
 name: OpenSSL_1_0_1b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1b
@@ -20333,9 +24613,29 @@ kind: pipeline
 name: OpenSSL_1_0_1c
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1c
@@ -20428,9 +24728,29 @@ kind: pipeline
 name: OpenSSL_1_0_1d
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1d
@@ -20523,9 +24843,29 @@ kind: pipeline
 name: OpenSSL_1_0_1e
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1e
@@ -20618,9 +24958,29 @@ kind: pipeline
 name: OpenSSL_1_0_1f
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1f
@@ -20713,9 +25073,29 @@ kind: pipeline
 name: OpenSSL_1_0_1g
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1g
@@ -20808,9 +25188,29 @@ kind: pipeline
 name: OpenSSL_1_0_1h
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1h
@@ -20903,9 +25303,29 @@ kind: pipeline
 name: OpenSSL_1_0_1i
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1i
@@ -20998,9 +25418,29 @@ kind: pipeline
 name: OpenSSL_1_0_1j
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1j
@@ -21093,9 +25533,29 @@ kind: pipeline
 name: OpenSSL_1_0_1k
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1k
@@ -21188,9 +25648,29 @@ kind: pipeline
 name: OpenSSL_1_0_1l
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1l
@@ -21283,9 +25763,29 @@ kind: pipeline
 name: OpenSSL_1_0_1m
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1m
@@ -21378,9 +25878,29 @@ kind: pipeline
 name: OpenSSL_1_0_1n
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1n
@@ -21473,9 +25993,29 @@ kind: pipeline
 name: OpenSSL_1_0_1o
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1o
@@ -21568,9 +26108,29 @@ kind: pipeline
 name: OpenSSL_1_0_1p
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1p
@@ -21663,9 +26223,29 @@ kind: pipeline
 name: OpenSSL_1_0_1q
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1q
@@ -21758,9 +26338,29 @@ kind: pipeline
 name: OpenSSL_1_0_1r
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1r
@@ -21853,9 +26453,29 @@ kind: pipeline
 name: OpenSSL_1_0_1s
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1s
@@ -21948,9 +26568,29 @@ kind: pipeline
 name: OpenSSL_1_0_1t
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1t
@@ -22043,9 +26683,29 @@ kind: pipeline
 name: OpenSSL_1_0_1u
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_1u
@@ -22138,9 +26798,29 @@ kind: pipeline
 name: OpenSSL_1_0_2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2
@@ -22233,9 +26913,29 @@ kind: pipeline
 name: OpenSSL_1_0_2-beta1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2-beta1
@@ -22328,9 +27028,29 @@ kind: pipeline
 name: OpenSSL_1_0_2-beta2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2-beta2
@@ -22423,9 +27143,29 @@ kind: pipeline
 name: OpenSSL_1_0_2-beta3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2-beta3
@@ -22518,9 +27258,29 @@ kind: pipeline
 name: OpenSSL_1_0_2-post-auto-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2-post-auto-reformat
@@ -22613,9 +27373,29 @@ kind: pipeline
 name: OpenSSL_1_0_2-post-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2-post-reformat
@@ -22708,9 +27488,29 @@ kind: pipeline
 name: OpenSSL_1_0_2-pre-auto-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2-pre-auto-reformat
@@ -22803,9 +27603,29 @@ kind: pipeline
 name: OpenSSL_1_0_2-pre-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2-pre-reformat
@@ -22898,9 +27718,29 @@ kind: pipeline
 name: OpenSSL_1_0_2a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2a
@@ -22993,9 +27833,29 @@ kind: pipeline
 name: OpenSSL_1_0_2b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2b
@@ -23088,9 +27948,29 @@ kind: pipeline
 name: OpenSSL_1_0_2c
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2c
@@ -23183,9 +28063,29 @@ kind: pipeline
 name: OpenSSL_1_0_2d
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2d
@@ -23278,9 +28178,29 @@ kind: pipeline
 name: OpenSSL_1_0_2e
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2e
@@ -23373,9 +28293,29 @@ kind: pipeline
 name: OpenSSL_1_0_2f
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2f
@@ -23468,9 +28408,29 @@ kind: pipeline
 name: OpenSSL_1_0_2g
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2g
@@ -23563,9 +28523,29 @@ kind: pipeline
 name: OpenSSL_1_0_2h
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2h
@@ -23658,9 +28638,29 @@ kind: pipeline
 name: OpenSSL_1_0_2i
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2i
@@ -23753,9 +28753,29 @@ kind: pipeline
 name: OpenSSL_1_0_2j
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2j
@@ -23848,9 +28868,29 @@ kind: pipeline
 name: OpenSSL_1_0_2k
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2k
@@ -23943,9 +28983,29 @@ kind: pipeline
 name: OpenSSL_1_0_2l
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2l
@@ -24038,9 +29098,29 @@ kind: pipeline
 name: OpenSSL_1_0_2m
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2m
@@ -24133,9 +29213,29 @@ kind: pipeline
 name: OpenSSL_1_0_2n
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2n
@@ -24228,9 +29328,29 @@ kind: pipeline
 name: OpenSSL_1_0_2o
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2o
@@ -24323,9 +29443,29 @@ kind: pipeline
 name: OpenSSL_1_0_2p
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2p
@@ -24418,9 +29558,29 @@ kind: pipeline
 name: OpenSSL_1_0_2q
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2q
@@ -24513,9 +29673,29 @@ kind: pipeline
 name: OpenSSL_1_0_2r
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2r
@@ -24608,9 +29788,29 @@ kind: pipeline
 name: OpenSSL_1_0_2s
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2s
@@ -24703,9 +29903,29 @@ kind: pipeline
 name: OpenSSL_1_0_2t
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2t
@@ -24798,9 +30018,29 @@ kind: pipeline
 name: OpenSSL_1_0_2u
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_0_2u
@@ -24893,9 +30133,29 @@ kind: pipeline
 name: OpenSSL_1_1_0
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0
@@ -24988,9 +30248,29 @@ kind: pipeline
 name: OpenSSL_1_1_0-pre1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0-pre1
@@ -25083,9 +30363,29 @@ kind: pipeline
 name: OpenSSL_1_1_0-pre2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0-pre2
@@ -25178,9 +30478,29 @@ kind: pipeline
 name: OpenSSL_1_1_0-pre3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0-pre3
@@ -25273,9 +30593,29 @@ kind: pipeline
 name: OpenSSL_1_1_0-pre4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0-pre4
@@ -25368,9 +30708,29 @@ kind: pipeline
 name: OpenSSL_1_1_0-pre5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0-pre5
@@ -25463,9 +30823,29 @@ kind: pipeline
 name: OpenSSL_1_1_0-pre6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0-pre6
@@ -25558,9 +30938,29 @@ kind: pipeline
 name: OpenSSL_1_1_0a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0a
@@ -25653,9 +31053,29 @@ kind: pipeline
 name: OpenSSL_1_1_0b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0b
@@ -25748,9 +31168,29 @@ kind: pipeline
 name: OpenSSL_1_1_0c
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0c
@@ -25843,9 +31283,29 @@ kind: pipeline
 name: OpenSSL_1_1_0d
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0d
@@ -25938,9 +31398,29 @@ kind: pipeline
 name: OpenSSL_1_1_0e
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0e
@@ -26033,9 +31513,29 @@ kind: pipeline
 name: OpenSSL_1_1_0f
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0f
@@ -26128,9 +31628,29 @@ kind: pipeline
 name: OpenSSL_1_1_0g
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0g
@@ -26223,9 +31743,29 @@ kind: pipeline
 name: OpenSSL_1_1_0h
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0h
@@ -26318,9 +31858,29 @@ kind: pipeline
 name: OpenSSL_1_1_0i
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0i
@@ -26413,9 +31973,29 @@ kind: pipeline
 name: OpenSSL_1_1_0j
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0j
@@ -26508,9 +32088,29 @@ kind: pipeline
 name: OpenSSL_1_1_0k
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0k
@@ -26603,9 +32203,29 @@ kind: pipeline
 name: OpenSSL_1_1_0l
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_0l
@@ -26698,9 +32318,29 @@ kind: pipeline
 name: OpenSSL_1_1_1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1
@@ -26793,9 +32433,29 @@ kind: pipeline
 name: OpenSSL_1_1_1-pre1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1-pre1
@@ -26888,9 +32548,29 @@ kind: pipeline
 name: OpenSSL_1_1_1-pre2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1-pre2
@@ -26983,9 +32663,29 @@ kind: pipeline
 name: OpenSSL_1_1_1-pre3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1-pre3
@@ -27078,9 +32778,29 @@ kind: pipeline
 name: OpenSSL_1_1_1-pre4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1-pre4
@@ -27173,9 +32893,29 @@ kind: pipeline
 name: OpenSSL_1_1_1-pre5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1-pre5
@@ -27268,9 +33008,29 @@ kind: pipeline
 name: OpenSSL_1_1_1-pre6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1-pre6
@@ -27363,9 +33123,29 @@ kind: pipeline
 name: OpenSSL_1_1_1-pre7
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1-pre7
@@ -27458,9 +33238,29 @@ kind: pipeline
 name: OpenSSL_1_1_1-pre8
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1-pre8
@@ -27553,9 +33353,29 @@ kind: pipeline
 name: OpenSSL_1_1_1-pre9
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1-pre9
@@ -27648,9 +33468,29 @@ kind: pipeline
 name: OpenSSL_1_1_1a
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1a
@@ -27743,9 +33583,29 @@ kind: pipeline
 name: OpenSSL_1_1_1b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1b
@@ -27838,9 +33698,29 @@ kind: pipeline
 name: OpenSSL_1_1_1c
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1c
@@ -27933,9 +33813,29 @@ kind: pipeline
 name: OpenSSL_1_1_1d
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1d
@@ -28028,9 +33928,29 @@ kind: pipeline
 name: OpenSSL_1_1_1e
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1e
@@ -28123,9 +34043,29 @@ kind: pipeline
 name: OpenSSL_1_1_1f
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1f
@@ -28218,9 +34158,29 @@ kind: pipeline
 name: OpenSSL_1_1_1g
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1g
@@ -28313,9 +34273,29 @@ kind: pipeline
 name: OpenSSL_1_1_1h
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1h
@@ -28408,9 +34388,29 @@ kind: pipeline
 name: OpenSSL_1_1_1i
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1i
@@ -28503,9 +34503,29 @@ kind: pipeline
 name: OpenSSL_1_1_1j
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1j
@@ -28598,9 +34618,29 @@ kind: pipeline
 name: OpenSSL_1_1_1k
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_1_1_1k
@@ -28693,9 +34733,29 @@ kind: pipeline
 name: OpenSSL_FIPS_1_0
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:OpenSSL_FIPS_1_0
@@ -28788,9 +34848,29 @@ kind: pipeline
 name: SSLeay_0_8_1b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:SSLeay_0_8_1b
@@ -28883,9 +34963,29 @@ kind: pipeline
 name: SSLeay_0_9_0b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:SSLeay_0_9_0b
@@ -28978,9 +35078,29 @@ kind: pipeline
 name: SSLeay_0_9_1b
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:SSLeay_0_9_1b
@@ -29073,9 +35193,29 @@ kind: pipeline
 name: STATE_after_zlib
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:STATE_after_zlib
@@ -29168,9 +35308,29 @@ kind: pipeline
 name: STATE_before_zlib
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:STATE_before_zlib
@@ -29263,9 +35423,29 @@ kind: pipeline
 name: master-post-auto-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:master-post-auto-reformat
@@ -29358,9 +35538,29 @@ kind: pipeline
 name: master-post-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:master-post-reformat
@@ -29453,9 +35653,29 @@ kind: pipeline
 name: master-pre-auto-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:master-pre-auto-reformat
@@ -29548,9 +35768,29 @@ kind: pipeline
 name: master-pre-reformat
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:master-pre-reformat
@@ -29643,9 +35883,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha1
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha1
@@ -29738,9 +35998,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha10
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha10
@@ -29833,9 +36113,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha11
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha11
@@ -29928,9 +36228,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha12
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha12
@@ -30023,9 +36343,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha13
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha13
@@ -30118,9 +36458,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha14
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha14
@@ -30213,9 +36573,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha15
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha15
@@ -30308,9 +36688,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha16
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha16
@@ -30403,9 +36803,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha2
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha2
@@ -30498,9 +36918,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha3
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha3
@@ -30593,9 +37033,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha4
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha4
@@ -30688,9 +37148,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha5
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha5
@@ -30783,9 +37263,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha6
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha6
@@ -30878,9 +37378,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha7
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha7
@@ -30973,9 +37493,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha8
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha8
@@ -31068,9 +37608,29 @@ kind: pipeline
 name: openssl-3.0.0-alpha9
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:openssl-3.0.0-alpha9
@@ -31163,9 +37723,29 @@ kind: pipeline
 name: rsaref
 
 steps:
+  - name: ls
+    image: docker
+    context: ./
+    commands:
+      - pwd
+      - ls -la
+      # - ls -la Dockerfile
+
+  - name: ls2
+    image: docker
+    context: ./
+    commands:
+      - cd /
+      - pwd
+      - ls -la
+      - cd /certs
+      - ls -la
+      - ls -la Dockerfile
+
     # Build the implementation and set the appropriate tag
   - name: build
     image: docker
+    context: ./
     commands:
       - docker build .
         --tag r4t31/openssl:rsaref
